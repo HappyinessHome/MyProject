@@ -1,2 +1,2 @@
 # MyProject
-a repository for my daily project
+##本项目是校园比赛申请系统
