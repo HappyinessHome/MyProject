@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.draduation.interfaces.OpeMat">
+    <select id="getAll" resultType="com.draduation.model.Match">
+        select * from t_match;
+    </select>
+    <select id="delete" parameterType="com.draduation.model.Match">
+        delete from t_match where id=#{id};
+    </select>
+    <select id="getOne" parameterType="com.draduation.model.Match" resultType="com.draduation.model.Match">
+        select * from t_match where id=#{id}
+    </select>
+    <select id="getByTid" resultType="com.draduation.model.Match">
+        select * from t_match where tid=#{tid} ;
+    </select>
+    <insert id="add" parameterType="com.draduation.model.Match">
+        insert into t_match values(null,#{type},#{time},#{name},#{mark},#{tid});
+
+    </insert>
+    <update id="update" parameterType="com.draduation.model.Match">
+        update t_match
+        <trim prefix="set" suffixOverrides=",">
+            <if test="type!=null">
+                type=#{type},
+            </if>
+            <if test="time!=null">
+                time=#{time},
+            </if>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="mark!=null">
+                mark=#{mark},
+            </if>
+
+        </trim>
+        where id=#{id}
+    </update>
+
+</mapper>

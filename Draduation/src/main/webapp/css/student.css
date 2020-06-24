@@ -1,0 +1,235 @@
+.data_base{
+    width: 100%;
+    height: 600px;
+    background-color: #F1F3FA;
+}
+.data_base>div{
+    width: 1204px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.section {
+    background-color: #fff;
+}
+
+.section_left{
+    width: 155px;
+    height: 500px;
+    background-color: #007BD5;
+    text-align: center;
+}
+.section_left img{
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.section_left p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+.section_left ul{
+    margin-top: 30px;
+}
+
+.section_left ul li{  
+    width: 155px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.bg_color{
+    color: #007BD5!important;
+    background-color: #fff;
+}
+.section_right{
+    width: 1020px;
+    height: 500px;
+}
+
+.tab1>div{
+    display: inline-block;
+    margin-top: 30px;
+}
+.tab1 p{
+    margin-top: 20px;
+}
+.tab1 .check_name{
+    margin-left: 80px;
+}
+.tab1 .check_state{
+    margin-left: 50px;
+}
+.tab1 .modify{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin: 50px 0 0 100px;
+}
+
+.tab2,.tab3,.tab4{
+    display: none;
+}
+
+.tab2 table{
+    margin-top: 20px;
+}
+.tab2 thead{
+    background-color: rgb(147, 186, 214);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.tab2 tr th{
+    width: 200px;
+}
+.tab2 tbody tr{
+    height: 40px;
+    line-height: 40px;
+}
+.tab2 tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+.operation a{
+    color: #2681DA;
+}
+
+
+
+.tab3 table{
+    margin-top: 20px;
+}
+.tab3 thead{
+    background-color: rgb(147, 186, 214);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.tab3 tr th{
+    width: 200px;
+}
+.tab3 tbody tr{
+    height: 40px;
+    line-height: 40px;
+}
+.tab3 tbody tr td{
+    border-bottom: 1px solid #ccc;
+}
+
+.tab4{
+    position: relative;
+    height: 100%;
+}
+.tab4>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tab4 .file_name{
+    display: none;
+}
+.tab4 .submit{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.modify_information{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modify_box{
+    width: 440px;
+    height: 340px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+}
+.modify_box p{
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.modify_box p:first-of-type{
+    margin-top: 0;
+}
+.modify_box p input{
+    /* width: 300px; */
+    border: 1px solid #ccc;
+    margin-left: 15px;
+}
+.modify_box button{
+    width: 60px;
+    margin-right: 10px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+.modify_box button:first-of-type{
+    margin-left: 110px;
+}
+.modify_box button:last-of-type{
+    margin-left: 35px;
+}
+.application{
+    
+}
+.application  p{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.application span{
+    font-size: 18px;
+}
+.application input{
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+}
+.match_apply{
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    letter-spacing: 3px;
+    margin-top: 80px;
+    margin-left: 150px;
+}

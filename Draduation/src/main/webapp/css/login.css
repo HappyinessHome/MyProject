@@ -1,0 +1,169 @@
+.body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+    background: url(../images/eva.png) no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 600px;
+    height: 300px;
+    position:absolute;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.box_left{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(111, 233, 111);
+}
+
+.box_left .name{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: center;
+}
+.name p {
+    color: #fefefe;
+}
+
+.name .text1{
+    font-size:30px;
+}
+
+.name .text2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.box_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+}
+.entrance{
+    width: 200px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 90px;
+    text-align: center;
+}
+.entrance a{
+    display: block;
+    color: #fff;
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    margin: 20px auto 0;
+}
+
+.student_password{
+    width: 200px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 60px;
+    text-align: center;
+    display: none;
+}
+
+.student_password p{
+    color: #353535;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.student_password input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.student_password #password{
+	margin-bottom: 0;
+}
+.student_password .pass_error{
+	color:red;
+	visibility:hidden;
+}
+
+.student_password button{
+    width: 150px;
+    margin-right: 10px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.teacher_password{
+    width: 200px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 60px;
+    text-align: center;
+    display: none;
+}
+
+.teacher_password p{
+    color: #353535;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.teacher_password input{
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #333;
+}
+.teacher_password #password{
+	margin-bottom: 0;
+}
+.teacher_password .pass_error{
+	color:red;
+	visibility:hidden;
+}
+
+.teacher_password button{
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #2681DA;
+    border-radius: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.return{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #2681DA;
+    display: none;
+}
+
+.return:hover{
+    color: #2681DA;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学校管理系统</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="box" id="box">
+            <div class="box_left">
+                <div class="name">
+                    <p class="text1">welcome!</p>
+                    <p class="text2">学校管理系统</p>
+                </div>
+            </div>
+            <div class="box_right">
+                <a href="jacascript:void(0);" class="return">返回</a>
+                <div class="entrance">
+                    <a href="jacascript:void(0);" class="student">学生登陆</a>
+                    <a href="jacascript:void(0);" class="teacher">教师登陆</a>
+                </div>
+                <div class="student_password">
+                    <p>学号</p>
+                    <input type="text" id="student_name">
+                    <p>密码</p>
+                    <input type="password" id="student_password">
+                    <p class="pass_error">用户名或密码出错</p>
+                    <button class="land">登录</button>
+                </div>
+                <div class="teacher_password">
+                    <p>账号</p>
+                    <input type="text" id="teacher_name">
+                    <p>密码</p>
+                    <input type="password" id="teacher_password">
+                    <p class="pass_error">用户名或密码出错</p>
+                    <button class="land">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.7.1.min.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/land.js"></script>
+
+</html>

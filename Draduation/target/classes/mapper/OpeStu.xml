@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <mapper namespace="com.draduation.interfaces.OpeStu">
+
+        <select id="getAll" resultType="com.draduation.model.Student" >
+            select * from t_student;
+        </select>
+        <select id="getBySto" resultType="com.draduation.model.Student">
+            select * from t_student where sto=#{sto}
+        </select>
+        <select id="getOne" parameterType="com.draduation.model.Student" resultType="com.draduation.model.Student">
+                select * from t_student
+                <where>
+                    <if test="sto!=null">
+                        sto=#{sto}
+                    </if>
+                    <if test="password!=null">
+                        and password=#{password};
+                    </if>
+                </where>
+        </select>
+
+
+
+
+
+
+
+        <update id="update" parameterType="com.draduation.model.Student">
+            update t_student
+            <trim prefix="set" suffixOverrides=",">
+               <include refid="all"></include>
+            </trim>
+            where sto=#{sto};
+        </update>
+        <insert id="add" parameterType="com.draduation.model.Student">
+            insert into t_student(sto,password)  values
+            <trim prefix="(" suffix=")" prefixOverrides="," >
+                <if test="sto!=null">
+                    #{sto},
+                </if>
+                <if test="name!=null">
+                    #{name},
+                </if>
+                <if test="age!=null">
+                    #{age},
+                </if>
+                <if test="sex!=null">
+                    #{sex},
+                </if>
+                <if test="college!=null">
+                    #{college},
+                </if><if test="grade!=null">
+                #{grade},
+            </if><if test="major!=null">
+                #{major},
+            </if><if test="password!=null">
+                #{password},
+            </if><if test="sex!=null">
+                #{sex},
+            </if>
+            <if test="filename!=null">
+                #{filename},
+            </if>
+            </trim>
+        </insert>
+
+
+    <sql id="all">
+        <if test="name!=null">
+            name=#{name},
+        </if>
+        <if test="age!=null">
+            age=#{age},
+        </if>
+        <if test="sex!=null">
+            sex=#{sex},
+        </if>
+        <if test="college!=null">
+            college=#{college},
+        </if>
+        <if test="grade!=null">
+            grade=#{grade},
+        </if>
+        <if test="major!=null">
+            major=#{major},
+        </if>
+        <if test="password!=null">
+            password=#{password},
+        </if>
+        <if test="filename!=null">
+            filename=#{filename},
+        </if>
+    </sql>
+    </mapper>
