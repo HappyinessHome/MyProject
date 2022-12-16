@@ -20,7 +20,7 @@
 
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <spring.version>4.1.6.RELEASE</spring.version>
+    <spring.version>5.2.20.RELEASE</spring.version>
     <aopalliance.version>1.0</aopalliance.version>
     <aspectj.weaver>1.9.2</aspectj.weaver>
 
